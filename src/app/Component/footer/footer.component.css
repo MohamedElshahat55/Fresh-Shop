@@ -1,0 +1,23 @@
+@media (max-width: 767px) {
+    /* Styles for screens smaller than 768px (sm) */
+    .footer-content h2 {
+      font-size: 1.5rem; /* Adjust heading size for smaller screens */
+    }
+    .footer-content p {
+      font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px) {
+    
+  }
+
+  @media (min-width: 992px) and (max-width: 1199px) {
+    /* Styles for screens between 992px and 1199px (lg) */
+    /* Can add specific styles for large screens here if needed */
+  }
+
+  @media (min-width: 1200px) {
+    /* Styles for screens wider than 1200px (xl) */
+    /* Can add specific styles for extra large screens here if needed */
+  }

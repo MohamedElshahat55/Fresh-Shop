@@ -1,0 +1,46 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.main-section-margin{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.product {
+  position: relative;
+  transition-delay: 2s;
+
+}
+
+.product .heart-avatar {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+}
+.product .heart-avatar2 {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 28px;
+  cursor: pointer;
+  display: none;
+  color: red;
+}
+.product:hover .heart-avatar{
+  display: block;
+
+}
+
+.product:hover .heart-avatar2{
+  display: block;
+}
+
+

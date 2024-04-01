@@ -1,0 +1,17 @@
+{
+    "navbar":{
+        "Home":"الصفحة الرئيسية",
+        "Products":"المنتجات",
+        "Categories":"الأصناف",
+        "Brands":"المركات",
+        "Logout":"تسجيل الخروج"
+    },
+    "home":{
+        "AllProducts" : "جميع المنتجات",
+        "Categories":"أحدث المنتجات "
+    },
+    "common":{
+        "Loading":"جاري التحميل",
+        "search":"ابحث هنا"
+    }
+}

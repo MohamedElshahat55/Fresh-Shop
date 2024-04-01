@@ -1,0 +1,17 @@
+{
+    "navbar":{
+        "Home":"Home",
+        "Products":"Products",
+        "Categories":"Categories",
+        "Brands":"Brands",
+        "Logout":"Logout"
+    },
+    "home":{
+        "AllProducts" : "All Products",
+        "Categories":"Shope Popular Categories"
+    },
+    "common":{
+        "Loading":"Loading",
+        "search":"searching...."
+    }
+}

@@ -1,0 +1,57 @@
+
+<section class="p-4 w-50 mx-auto shadow rounded bg-main-light" style="margin-top: 70px; margin-bottom: 70px;">
+  <form [formGroup]="paymentForm" (ngSubmit)="handelPaymentForm()">
+    <div class="form-group my-2">
+      <label for="details">Details</label>
+      <input
+        type="text"
+        id="details"
+        class="form-control"
+        formControlName="details"
+      />
+    </div>
+    <div class="form-group my-2">
+      <label for="phone">Phone</label>
+      <input
+        type="text"
+        id="phone"
+        class="form-control"
+        formControlName="phone"
+        [class.is-invalid] = 'phone?.invalid'
+        [class.is-valid] = 'phone?.valid'
+      />
+    </div>
+    <!-- Alert -->
+    <div
+      class="alert alert-danger"
+      [hidden]="phone?.valid || phone?.untouched"
+    >
+      <p *ngIf="phone?.errors?.['required']">
+        Phone Is Required
+      </p>
+    </div>
+    <div class="form-group my-2">
+      <label for="city">City</label>
+      <input
+        type="text"
+        id="city"
+        class="form-control"
+        formControlName="city"
+        [class.is-invalid] = 'city?.invalid'
+        [class.is-valid] = 'city?.valid'
+      />
+    </div>
+    <!-- Alert -->
+    <div
+    class="alert alert-danger"
+    [hidden]="city?.  valid || city?.untouched">
+    <p *ngIf="city?.errors?.['required']">
+      City Is Required
+    </p>
+  </div>
+
+    <button [disabled]="paymentForm.invalid" type="submit" class="btn btn-success d-block ms-auto">
+      submit
+    </button>
+  </form>
+</section>

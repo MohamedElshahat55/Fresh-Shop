@@ -1,0 +1,16 @@
+<div class="m-0 p-0" >
+  <router-outlet></router-outlet>
+<!-- auth-layout or blank-layout -->
+<app-footer class="position-relative bottom-0 left-0 right-0 w-100"></app-footer>
+</div>
+
+<!-- [class] ="lang === 'en' ? 'ltr' : 'rtl' " -->
+
+<ngx-spinner
+  bdColor="rgba(51,51,51,0.8)"
+  size="medium"
+  color="#fff"
+  type="ball-scale-multiple"
+>
+  <p style="font-size: 20px; color: white">{{"common.Loading" | translate}}...</p>
+</ngx-spinner>

@@ -1,0 +1,44 @@
+<section class="py-4 " style="margin-top: 70px;">
+  <div class="container">
+    <div class="row g-4 justify-content-center">
+      <div class="col-sm-6 col-md-2 m-3" *ngFor="
+      let item of brandsData
+        | paginate
+          : {
+              id: 'brandPaginations',
+              itemsPerPage: pageSize,
+              currentPage: currentPage,
+              totalItems: total
+            }
+    ">
+        <div class="card" role="button" [routerLink]="['/brands',item._id]">
+          <img class="card-img-top w-100" [src]="item.image" [alt]="item.name" />
+          <div class="card-body">
+            <p class="card-title">
+              {{item.name}}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="my-4 d-flex justify-content-center">
+    <pagination-controls
+      id="brandPaginations"
+      (pageChange)="pageChanged($event)"
+      (pageBoundsCorrection)="pageChanged($event)"
+      [maxSize]="9"
+      [directionLinks]="true"
+      [autoHide]="true"
+      [responsive]="true"
+      previousLabel="Previous"
+      nextLabel="Next"
+      screenReaderPaginationLabel="Pagination"
+      screenReaderPageLabel="page"
+      screenReaderCurrentLabel="You're on page"
+    >
+    </pagination-controls>
+  </div>
+  

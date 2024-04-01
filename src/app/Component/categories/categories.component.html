@@ -1,0 +1,15 @@
+<section class="container py-4 my-5 ">
+    <div class="row g-3 justify-content-sm-center">
+        <div class="col-sm-6 col-md-4  " *ngFor="let cat of categories">
+            <div class="card " role="button" [routerLink]="['/category-details',cat._id]">
+                <div>
+                    <img class="card-img-top w-100" height="300px" [src]="cat.image" [alt]="cat.name">
+                </div>
+                <div class="card-body">
+                  <h5 class="card-title text-success">{{cat.name}}</h5>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
